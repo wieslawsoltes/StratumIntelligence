@@ -1,0 +1,59 @@
+{
+  "id": "pipe-1",
+  "name": "Equipment readiness",
+  "description": "Filter the asset register and derive a review priority.",
+  "nodes": [
+    {
+      "id": "step-source",
+      "type": "source",
+      "name": "Equipment register",
+      "config": {
+        "dataset": "ds-assets"
+      },
+      "inputs": [],
+      "x": 60,
+      "y": 130
+    },
+    {
+      "id": "step-filter",
+      "type": "filter",
+      "name": "Active equipment",
+      "config": {
+        "expression": "status = 'Active'"
+      },
+      "inputs": [
+        "step-source"
+      ],
+      "x": 340,
+      "y": 130
+    },
+    {
+      "id": "step-derive",
+      "type": "derive",
+      "name": "Review priority",
+      "config": {
+        "column": "priority",
+        "expression": "100 - health"
+      },
+      "inputs": [
+        "step-filter"
+      ],
+      "x": 620,
+      "y": 130
+    },
+    {
+      "id": "step-output",
+      "type": "output",
+      "name": "Readiness register",
+      "config": {
+        "name": "Readiness register"
+      },
+      "inputs": [
+        "step-derive"
+      ],
+      "x": 900,
+      "y": 130
+    }
+  ],
+  "runs": []
+}

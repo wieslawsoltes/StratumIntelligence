@@ -1,0 +1,16 @@
+{
+  "name": "stratum-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first operational intelligence and P&ID analysis workspace",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.js",
+    "build:pages": "python3 tools/build-singlefile.py && node tools/build-pages.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

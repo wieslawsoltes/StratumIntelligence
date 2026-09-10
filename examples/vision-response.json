@@ -1,0 +1,27 @@
+{
+  "coordinateSystem": "normalized",
+  "components": [
+    {
+      "tag": "P-201",
+      "name": "Feed pump",
+      "type": "pump",
+      "x": 0.25,
+      "y": 0.5
+    },
+    {
+      "tag": "HV-201",
+      "name": "Outlet isolation",
+      "type": "valve",
+      "x": 0.6,
+      "y": 0.5
+    }
+  ],
+  "connections": [
+    {
+      "from": "P-201",
+      "to": "HV-201",
+      "kind": "process",
+      "tag": "WTR-201"
+    }
+  ]
+}

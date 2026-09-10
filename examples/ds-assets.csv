@@ -1,0 +1,21 @@
+id,tag,name,type,symbol,unit,status,criticality,pressure,temperature,health,owner,diagram,diagramNode
+asset-v101,V-101,Feed water buffer vessel,Equipment,tank,Unit 100,Active,Medium,6,42,96,Process engineering,pid-100,v101
+asset-hv101,HV-101,Suction isolation,Valve,valve,Unit 100,Active,Medium,6,42,95,Process engineering,pid-100,hv101
+asset-p101a,P-101A,Feed water pump A,Equipment,pump,Unit 100,Active,High,8.2,42,94,Process engineering,pid-100,p101a
+asset-p101b,P-101B,Feed water pump B,Equipment,pump,Unit 100,Active,High,6,42,93,Process engineering,pid-100,p101b
+asset-nrv101,NRV-101,Discharge check valve A,Valve,check,Unit 100,Active,Medium,6,42,92,Process engineering,pid-100,nrv101
+asset-nrv102,NRV-102,Discharge check valve B,Valve,check,Unit 100,Active,Medium,6,42,96,Process engineering,pid-100,nrv102
+asset-hv102,HV-102,Discharge isolation,Valve,valve,Unit 100,Active,Medium,6,42,95,Process engineering,pid-100,hv102
+asset-e101,E-101,Feed water preheater,Equipment,exchanger,Unit 100,Active,Medium,6,42,94,Process engineering,pid-100,e101
+asset-fv101,FV-101,Flow control valve,Valve,control,Unit 100,Active,Medium,6,42,93,Process engineering,pid-100,fv101
+asset-lt101,LT-101,Vessel level transmitter,Instrument,instrument,Unit 100,Active,Medium,6,42,92,Process engineering,pid-100,lt101
+asset-lic101,LIC-101,Level indicating controller,Instrument,instrument,Unit 100,Active,Medium,6,42,96,Process engineering,pid-100,lic101
+asset-pt101,PT-101,Pump discharge pressure,Instrument,instrument,Unit 100,Active,Medium,6,42,95,Process engineering,pid-100,pt101
+asset-pi101,PI-101,Pressure indicator,Instrument,instrument,Unit 100,Active,Medium,6,42,94,Process engineering,pid-100,pi101
+asset-tt101,TT-101,Outlet temperature,Instrument,instrument,Unit 100,Active,Medium,6,42,93,Process engineering,pid-100,tt101
+asset-ft101,FT-101,Outlet flow transmitter,Instrument,instrument,Unit 100,Active,Medium,6,42,92,Process engineering,pid-100,ft101
+asset-fic101,FIC-101,Flow indicating controller,Instrument,instrument,Unit 100,Active,Medium,6,42,96,Process engineering,pid-100,fic101
+asset-hv201,HV-201,Utility isolation,Valve,valve,Unit 100,Active,Medium,6,42,95,Process engineering,pid-100,hv201
+asset-hv202,HV-202,Utility return isolation,Valve,valve,Unit 100,Active,Medium,6,42,94,Process engineering,pid-100,hv202
+asset-hv103,HV-103,Drain isolation,Valve,valve,Unit 100,Active,Medium,6,42,93,Process engineering,pid-100,hv103
+asset-pt102,PT-102,Spare pressure transmitter,Instrument,instrument,Unit 100,Needs review,Medium,6,42,92,Process engineering,pid-100,pt102

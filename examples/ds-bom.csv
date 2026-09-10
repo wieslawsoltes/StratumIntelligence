@@ -1,0 +1,21 @@
+tag,description,type,quantity,material,lineClass,unit
+V-101,Feed water buffer vessel,Equipment,1,Carbon steel,CS150,Unit 100
+HV-101,Suction isolation,Valve,1,Carbon steel,CS150,Unit 100
+P-101A,Feed water pump A,Equipment,1,Carbon steel,CS150,Unit 100
+P-101B,Feed water pump B,Equipment,1,Carbon steel,CS150,Unit 100
+NRV-101,Discharge check valve A,Valve,1,Carbon steel,CS150,Unit 100
+NRV-102,Discharge check valve B,Valve,1,Carbon steel,CS150,Unit 100
+HV-102,Discharge isolation,Valve,1,Carbon steel,SS300,Unit 100
+E-101,Feed water preheater,Equipment,1,Carbon steel,CS150,Unit 100
+FV-101,Flow control valve,Valve,1,Carbon steel,CS150,Unit 100
+LT-101,Vessel level transmitter,Instrument,1,316 SS,CS150,Unit 100
+LIC-101,Level indicating controller,Instrument,1,316 SS,CS150,Unit 100
+PT-101,Pump discharge pressure,Instrument,1,316 SS,CS150,Unit 100
+PI-101,Pressure indicator,Instrument,1,316 SS,CS150,Unit 100
+TT-101,Outlet temperature,Instrument,1,316 SS,CS150,Unit 100
+FT-101,Outlet flow transmitter,Instrument,1,316 SS,CS150,Unit 100
+FIC-101,Flow indicating controller,Instrument,1,316 SS,CS150,Unit 100
+HV-201,Utility isolation,Valve,1,Carbon steel,CS150,Unit 100
+HV-202,Utility return isolation,Valve,1,Carbon steel,CS150,Unit 100
+HV-103,Drain isolation,Valve,1,Carbon steel,CS150,Unit 100
+HV-999,Spare isolation valve,Valve,1,Carbon steel,CS150,Unit 100
