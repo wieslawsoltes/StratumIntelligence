@@ -1,0 +1,142 @@
+{
+  "browser": "System Chromium / policy-restricted opaque document",
+  "mode": "Canvas 2D",
+  "worker": "worker",
+  "storage": "IndexedDB denied by browser context",
+  "results": [
+    {
+      "name": "Initial drawing renders 25 components",
+      "status": "pass"
+    },
+    {
+      "name": "Worker client parses data in available execution mode",
+      "status": "pass"
+    },
+    {
+      "name": "Inspector edits, undo and redo change actual state",
+      "status": "pass"
+    },
+    {
+      "name": "Pointer drag moves and snaps component coordinates",
+      "status": "pass"
+    },
+    {
+      "name": "Symbol placement and two-click pipe creation",
+      "status": "pass"
+    },
+    {
+      "name": "Canvas zoom and fit",
+      "status": "pass"
+    },
+    {
+      "name": "BOM tab shows real reconciliation results",
+      "status": "pass"
+    },
+    {
+      "name": "Revision baseline creation persists in state",
+      "status": "pass"
+    },
+    {
+      "name": "Human-approved diagram publication updates ontology",
+      "status": "pass"
+    },
+    {
+      "name": "Data workspace executes an actual query",
+      "status": "pass"
+    },
+    {
+      "name": "Dataset profile dialog",
+      "status": "pass"
+    },
+    {
+      "name": "Pipeline execution and output materialization",
+      "status": "pass"
+    },
+    {
+      "name": "Grounded assistant reads current diagram values",
+      "status": "pass"
+    },
+    {
+      "name": "Ontology object editor creates a real schema-backed object",
+      "status": "pass"
+    },
+    {
+      "name": "Pipeline block dragging updates retained layout and wiring",
+      "status": "pass"
+    },
+    {
+      "name": "Evaluation UI executes and records four assertions",
+      "status": "pass"
+    },
+    {
+      "name": "Telemetry anomaly analysis opens actual computed results",
+      "status": "pass"
+    },
+    {
+      "name": "Preferences update theme and workspace branding",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: overview",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: ontology",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: data",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: pipelines",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: pid",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: agents",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: logic",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: evaluations",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: applications",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: automations",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: observability",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: governance",
+      "status": "pass"
+    },
+    {
+      "name": "Screen: settings",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile inspector drawer can edit component properties",
+      "status": "pass"
+    },
+    {
+      "name": "No uncaught browser errors",
+      "status": "pass",
+      "errors": []
+    }
+  ],
+  "consoleErrors": []
+}

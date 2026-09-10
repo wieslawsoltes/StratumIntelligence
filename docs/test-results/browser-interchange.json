@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "name": "SVG metadata round trip retains editable components and edges",
+      "status": "pass"
+    },
+    {
+      "name": "Generic SVG import strips active/external content and yields review candidates",
+      "status": "pass"
+    },
+    {
+      "name": "Native JSON file picker imports a second editable diagram",
+      "status": "pass"
+    },
+    {
+      "name": "PNG exporter renders and encodes actual scene pixels",
+      "status": "pass"
+    },
+    {
+      "name": "Raster import retains source image without fabricating detections",
+      "status": "pass"
+    },
+    {
+      "name": "Workspace JSON round trip validates and excludes the memory-only key",
+      "status": "pass"
+    },
+    {
+      "name": "Schema-validated example vision response enters explicit review gate (not a live model)",
+      "status": "pass"
+    },
+    {
+      "name": "100,000-value numeric diagnostic computes full result",
+      "status": "pass"
+    }
+  ],
+  "environment": "Opaque Chromium document; Canvas 2D; no live model/PDF request"
+}

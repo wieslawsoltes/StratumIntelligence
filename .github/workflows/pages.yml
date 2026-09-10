@@ -1,0 +1,59 @@
+name: Deploy Stratum Intelligence to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify release file checksums
+        run: sha256sum --check MANIFEST.sha256
+      - name: Run core tests
+        run: npm test
+      - name: Build public static site
+        run: npm run build:pages
+      - name: Verify portable release matches source
+        run: git diff --exit-code -- stratum-intelligence.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Publish static site
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Check published entry points
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for path in '' styles.css src/app.js assets/stratum.svg stratum-intelligence.html; do
+            curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 5 "${PAGE_URL%/}/${path}" --output /dev/null
+            echo "Verified ${PAGE_URL%/}/${path}"
+          done

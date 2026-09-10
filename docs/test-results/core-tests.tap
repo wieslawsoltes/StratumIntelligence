@@ -1,0 +1,382 @@
+TAP version 13
+# Subtest: CSV inference preserves "0123"
+ok 1 - CSV inference preserves "0123"
+  ---
+  duration_ms: 2.751211
+  type: 'test'
+  ...
+# Subtest: CSV inference preserves "1.5"
+ok 2 - CSV inference preserves "1.5"
+  ---
+  duration_ms: 0.237491
+  type: 'test'
+  ...
+# Subtest: CSV inference preserves "true"
+ok 3 - CSV inference preserves "true"
+  ---
+  duration_ms: 0.100158
+  type: 'test'
+  ...
+# Subtest: CSV inference preserves ""
+ok 4 - CSV inference preserves ""
+  ---
+  duration_ms: 0.062292
+  type: 'test'
+  ...
+# Subtest: CSV inference preserves "9007199254740993"
+ok 5 - CSV inference preserves "9007199254740993"
+  ---
+  duration_ms: 0.093849
+  type: 'test'
+  ...
+# Subtest: CSV quoted delimiters, embedded newlines, escaped quotes, BOM and CRLF
+ok 6 - CSV quoted delimiters, embedded newlines, escaped quotes, BOM and CRLF
+  ---
+  duration_ms: 1.246671
+  type: 'test'
+  ...
+# Subtest: CSV rejects malformed quotes, duplicate headers, wide records and prototype keys
+ok 7 - CSV rejects malformed quotes, duplicate headers, wide records and prototype keys
+  ---
+  duration_ms: 0.52852
+  type: 'test'
+  ...
+# Subtest: CSV formula escaping and round trip
+ok 8 - CSV formula escaping and round trip
+  ---
+  duration_ms: 0.454801
+  type: 'test'
+  ...
+# Subtest: Profile computes exact extrema beyond 50,000 rows
+ok 9 - Profile computes exact extrema beyond 50,000 rows
+  ---
+  duration_ms: 20.686689
+  type: 'test'
+  ...
+# Subtest: Profile nulls, distinct values and mixed types
+ok 10 - Profile nulls, distinct values and mixed types
+  ---
+  duration_ms: 0.388082
+  type: 'test'
+  ...
+# Subtest: Expression: 2 + 3 * 4
+ok 11 - Expression: 2 + 3 * 4
+  ---
+  duration_ms: 0.758329
+  type: 'test'
+  ...
+# Subtest: Expression: (2 + 3) * 4
+ok 12 - Expression: (2 + 3) * 4
+  ---
+  duration_ms: 0.104765
+  type: 'test'
+  ...
+# Subtest: Expression: contains(tag, '101') and pressure >= 8
+ok 13 - Expression: contains(tag, '101') and pressure >= 8
+  ---
+  duration_ms: 0.233125
+  type: 'test'
+  ...
+# Subtest: Expression: not pressure = 8
+ok 14 - Expression: not pressure = 8
+  ---
+  duration_ms: 0.066718
+  type: 'test'
+  ...
+# Subtest: Expression: not pressure = 8
+ok 15 - Expression: not pressure = 8
+  ---
+  duration_ms: 0.051606
+  type: 'test'
+  ...
+# Subtest: Expression: tag like 'P-%'
+ok 16 - Expression: tag like 'P-%'
+  ---
+  duration_ms: 0.174908
+  type: 'test'
+  ...
+# Subtest: Expression: pressure is null
+ok 17 - Expression: pressure is null
+  ---
+  duration_ms: 0.136792
+  type: 'test'
+  ...
+# Subtest: Expression: pressure is not null
+ok 18 - Expression: pressure is not null
+  ---
+  duration_ms: 0.063443
+  type: 'test'
+  ...
+# Subtest: Expression: 1 / 0
+ok 19 - Expression: 1 / 0
+  ---
+  duration_ms: 0.044395
+  type: 'test'
+  ...
+# Subtest: Expression: round(pressure, 2)
+ok 20 - Expression: round(pressure, 2)
+  ---
+  duration_ms: 0.099037
+  type: 'test'
+  ...
+# Subtest: Expression: coalesce(a, b, 9)
+ok 21 - Expression: coalesce(a, b, 9)
+  ---
+  duration_ms: 0.090954
+  type: 'test'
+  ...
+# Subtest: Expression: missing
+ok 22 - Expression: missing
+  ---
+  duration_ms: 0.057615
+  type: 'test'
+  ...
+# Subtest: Expressions cannot execute code or access inherited properties
+ok 23 - Expressions cannot execute code or access inherited properties
+  ---
+  duration_ms: 0.287024
+  type: 'test'
+  ...
+# Subtest: Expressions reject deep nesting and trailing tokens
+ok 24 - Expressions reject deep nesting and trailing tokens
+  ---
+  duration_ms: 0.240825
+  type: 'test'
+  ...
+# Subtest: SQL filters, aliases, function arguments, order and limit
+ok 25 - SQL filters, aliases, function arguments, order and limit
+  ---
+  duration_ms: 1.00234
+  type: 'test'
+  ...
+# Subtest: SQL grouped aggregates and null behavior
+ok 26 - SQL grouped aggregates and null behavior
+  ---
+  duration_ms: 0.766672
+  type: 'test'
+  ...
+# Subtest: SQL rejects writes, unknown tables and unsupported clauses
+ok 27 - SQL rejects writes, unknown tables and unsupported clauses
+  ---
+  duration_ms: 0.18324
+  type: 'test'
+  ...
+# Subtest: Sample DAG executes real transformations without mutating its input
+ok 28 - Sample DAG executes real transformations without mutating its input
+  ---
+  duration_ms: 2.900852
+  type: 'test'
+  ...
+# Subtest: Pipeline detects cycles, missing inputs and unknown operations
+ok 29 - Pipeline detects cycles, missing inputs and unknown operations
+  ---
+  duration_ms: 0.234146
+  type: 'test'
+  ...
+# Subtest: Pipeline left join, collision names and deduplication
+ok 30 - Pipeline left join, collision names and deduplication
+  ---
+  duration_ms: 0.345189
+  type: 'test'
+  ...
+# Subtest: Pipeline select, aggregate and sort
+ok 31 - Pipeline select, aggregate and sort
+  ---
+  duration_ms: 0.533317
+  type: 'test'
+  ...
+# Subtest: Directional traversal distinguishes upstream/downstream and signals
+ok 32 - Directional traversal distinguishes upstream/downstream and signals
+  ---
+  duration_ms: 0.502662
+  type: 'test'
+  ...
+# Subtest: Closed valves stop traversal only when requested
+ok 33 - Closed valves stop traversal only when requested
+  ---
+  duration_ms: 0.116291
+  type: 'test'
+  ...
+# Subtest: Shortest path returns path or empty result
+ok 34 - Shortest path returns path or empty result
+  ---
+  duration_ms: 0.216189
+  type: 'test'
+  ...
+# Subtest: Sample has the two intentional PT-102 structural findings
+ok 35 - Sample has the two intentional PT-102 structural findings
+  ---
+  duration_ms: 0.986687
+  type: 'test'
+  ...
+# Subtest: Structural validation detects duplicate tags, dangling edges and pressure envelope
+ok 36 - Structural validation detects duplicate tags, dangling edges and pressure envelope
+  ---
+  duration_ms: 0.605604
+  type: 'test'
+  ...
+# Subtest: BOM finds exact tags, mismatch, missing and extra items
+ok 37 - BOM finds exact tags, mismatch, missing and extra items
+  ---
+  duration_ms: 1.163157
+  type: 'test'
+  ...
+# Subtest: BOM normalization and ambiguous duplicates are explicit
+ok 38 - BOM normalization and ambiguous duplicates are explicit
+  ---
+  duration_ms: 0.120768
+  type: 'test'
+  ...
+# Subtest: Revision diff tracks added, removed and changed fields
+ok 39 - Revision diff tracks added, removed and changed fields
+  ---
+  duration_ms: 1.42193
+  type: 'test'
+  ...
+# Subtest: Tag extraction/classification is deterministic
+ok 40 - Tag extraction/classification is deterministic
+  ---
+  duration_ms: 0.525626
+  type: 'test'
+  ...
+# Subtest: Vision candidates are bounded, normalized and always unverified
+ok 41 - Vision candidates are bounded, normalized and always unverified
+  ---
+  duration_ms: 4.142886
+  type: 'test'
+  ...
+# Subtest: Vision rejects hallucinated endpoints, duplicate tags, out-of-range and nonnumeric coordinates
+ok 42 - Vision rejects hallucinated endpoints, duplicate tags, out-of-range and nonnumeric coordinates
+  ---
+  duration_ms: 0.175329
+  type: 'test'
+  ...
+# Subtest: Seed validates; edits are atomic with undo and redo
+ok 43 - Seed validates; edits are atomic with undo and redo
+  ---
+  duration_ms: 3.546435
+  type: 'test'
+  ...
+# Subtest: Invalid transaction rolls back all changes
+ok 44 - Invalid transaction rolls back all changes
+  ---
+  duration_ms: 1.324516
+  type: 'test'
+  ...
+# Subtest: Viewer guard rejects edits but permits explicit local preferences
+ok 45 - Viewer guard rejects edits but permits explicit local preferences
+  ---
+  duration_ms: 1.414608
+  type: 'test'
+  ...
+# Subtest: Workspace importer rejects malicious IDs and external source image URLs
+ok 46 - Workspace importer rejects malicious IDs and external source image URLs
+  ---
+  duration_ms: 1.485162
+  type: 'test'
+  ...
+# Subtest: Publish is a frozen proposal and only changes ontology after approval
+ok 47 - Publish is a frozen proposal and only changes ontology after approval
+  ---
+  duration_ms: 1.131971
+  type: 'test'
+  ...
+# Subtest: Work order and object-edit approvals actually mutate data
+ok 48 - Work order and object-edit approvals actually mutate data
+  ---
+  duration_ms: 0.497474
+  type: 'test'
+  ...
+# Subtest: Local grounded assistant: Which components need review?
+ok 49 - Local grounded assistant: Which components need review?
+  ---
+  duration_ms: 1.390873
+  type: 'test'
+  ...
+# Subtest: Local grounded assistant: Trace downstream from P-101A
+ok 50 - Local grounded assistant: Trace downstream from P-101A
+  ---
+  duration_ms: 0.69747
+  type: 'test'
+  ...
+# Subtest: Local grounded assistant: Reconcile the bill of materials
+ok 51 - Local grounded assistant: Reconcile the bill of materials
+  ---
+  duration_ms: 0.796306
+  type: 'test'
+  ...
+# Subtest: Local grounded assistant: What is the operating pressure of P-101A?
+ok 52 - Local grounded assistant: What is the operating pressure of P-101A?
+  ---
+  duration_ms: 0.505527
+  type: 'test'
+  ...
+# Subtest: Local evaluation suite passes four real assertions
+ok 53 - Local evaluation suite passes four real assertions
+  ---
+  duration_ms: 1.308943
+  type: 'test'
+  ...
+# Subtest: Document retrieval is lexical and ranks relevant evidence
+ok 54 - Document retrieval is lexical and ranks relevant evidence
+  ---
+  duration_ms: 1.252128
+  type: 'test'
+  ...
+# Subtest: External model requires explicit consent
+ok 55 - External model requires explicit consent
+  ---
+  duration_ms: 0.736417
+  type: 'test'
+  ...
+# Subtest: Endpoint contract sets memory-provided bearer key and parses the response (mock)
+ok 56 - Endpoint contract sets memory-provided bearer key and parses the response (mock)
+  ---
+  duration_ms: 17.19223
+  type: 'test'
+  ...
+# Subtest: Endpoint URL validation and text escaping
+ok 57 - Endpoint URL validation and text escaping
+  ---
+  duration_ms: 0.228107
+  type: 'test'
+  ...
+# Subtest: Vector scene tessellates to finite batched vertices
+ok 58 - Vector scene tessellates to finite batched vertices
+  ---
+  duration_ms: 7.224656
+  type: 'test'
+  ...
+# Subtest: Imported source drawings retain editable connection geometry
+ok 59 - Imported source drawings retain editable connection geometry
+  ---
+  duration_ms: 0.911575
+  type: 'test'
+  ...
+# Subtest: Orthogonal route creates deterministic midpoint waypoints
+ok 60 - Orthogonal route creates deterministic midpoint waypoints
+  ---
+  duration_ms: 0.12877
+  type: 'test'
+  ...
+# Subtest: Editable SVG export includes model metadata and original embedded source
+ok 61 - Editable SVG export includes model metadata and original embedded source
+  ---
+  duration_ms: 1.40922
+  type: 'test'
+  ...
+# Subtest: CPU anomaly fallback computes z-scores, constant and empty inputs
+ok 62 - CPU anomaly fallback computes z-scores, constant and empty inputs
+  ---
+  duration_ms: 0.77233
+  type: 'test'
+  ...
+1..62
+# tests 62
+# suites 0
+# pass 62
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 367.228269
